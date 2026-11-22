@@ -15,17 +15,13 @@ header{position:absolute;inset:0 0 auto 0;z-index:5;padding:18px 0;color:#fff}
 nav{display:flex;gap:22px;font-weight:500;font-size:.98rem}
 nav a{text-decoration:none;opacity:.92}nav a:hover{opacity:1;text-decoration:underline;text-underline-offset:6px}
 .hero{background:var(--wine) url(images/hero-bg.jpg) center/cover;color:#fff;padding:132px 0 96px;overflow:hidden}
-.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.hero .wrap{display:grid;grid-template-columns:1fr;gap:56px;align-items:center}
 .hero h1{font-size:clamp(2.6rem,6vw,4.6rem);font-weight:800;margin-bottom:22px;animation:rise .9s ease both}
 .hero p{font-size:1.2rem;max-width:34em;margin-bottom:32px;opacity:.94;animation:rise .9s .12s ease both}
 .btns{display:flex;gap:14px;flex-wrap:wrap;animation:rise .9s .22s ease both}
 .btn{display:inline-block;padding:15px 28px;border-radius:999px;font-weight:700;text-decoration:none;background:var(--gold);color:var(--wine);border:2px solid var(--gold);transition:transform .2s}
 .btn:hover{transform:translateY(-2px)}
 .btn.line{background:transparent;color:#fff;border-color:#fff}
-.stack{position:relative;min-height:520px}
-.stack img{position:absolute;width:62%;border-radius:18px;box-shadow:0 24px 60px rgba(0,0,0,.45);border:6px solid #fff}
-.stack .a{left:0;top:30px;transform:rotate(-4deg)}
-.stack .b{right:0;top:120px;transform:rotate(3deg)}
 @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 section{padding:92px 0}
 .pillars h2{font-size:clamp(2rem,4vw,3rem);max-width:15em;margin-bottom:48px;color:var(--wine)}
@@ -56,11 +52,11 @@ footer{background:var(--wine);color:#fff;padding:34px 0;font-size:.95rem}
 footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 @media(max-width:860px){
 .hero{padding-top:150px}.hero .wrap,.about .wrap{grid-template-columns:1fr}
-.stack{min-height:440px}.cgrid{grid-template-columns:1fr;gap:36px}.contact dl{grid-template-columns:1fr;gap:2px 0}.contact dd{margin-bottom:14px}.row{grid-template-columns:1fr;gap:10px}section{padding:68px 0}}
+.cgrid{grid-template-columns:1fr;gap:36px}.contact dl{grid-template-columns:1fr;gap:2px 0}.contact dd{margin-bottom:14px}.row{grid-template-columns:1fr;gap:10px}section{padding:68px 0}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 
 nav{flex-wrap:wrap}nav a[aria-current]{opacity:1;text-decoration:underline;text-underline-offset:6px}
-.phero{background:var(--gold);color:var(--wine);padding:150px 0 64px}.phero h1{font-size:clamp(2.4rem,6vw,4.2rem);font-weight:800;margin-bottom:14px}.phero p{max-width:36em;font-size:1.15rem;opacity:.92}
+.phero{background:var(--wine);color:#fff;padding:150px 0 64px}.phero h1{font-size:clamp(2.4rem,6vw,4.2rem);font-weight:800;margin-bottom:14px}.phero p{max-width:36em;font-size:1.15rem;opacity:.92}
 .mv{display:grid;grid-template-columns:1fr 1fr;gap:56px}.mv h2,.pg h2{font-size:clamp(1.8rem,3.5vw,2.6rem);color:var(--wine);margin-bottom:14px}
 .team{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:36px}
 .team img{width:100%;aspect-ratio:3/4;object-fit:cover;object-position:top;border-radius:18px;margin-bottom:14px}.team h3{font-size:1.35rem;color:var(--wine)}.team p{color:var(--mag);font-weight:700}
@@ -70,11 +66,9 @@ nav{flex-wrap:wrap}nav a[aria-current]{opacity:1;text-decoration:underline;text-
 footer a{text-underline-offset:5px;margin-right:14px}
 @media(max-width:860px){.mv{grid-template-columns:1fr}.phero{padding-top:170px}}
 
-body.in header{color:var(--wine)}
 .stats{background:var(--gold);color:var(--wine);padding:60px 0}.stats .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:28px;text-align:center}
 .stats b{display:block;font:800 clamp(2.6rem,6vw,4.2rem)/1 var(--head);letter-spacing:-.02em}.stats span{font-weight:700;font-size:1.05rem}
 .proj{padding:44px 0;border-top:3px solid var(--gold)}.proj h2{font-size:clamp(1.7rem,3.5vw,2.4rem);color:var(--wine);margin-bottom:12px}.proj p{max-width:44em;margin-bottom:10px}
 .pgal{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px;align-items:start;margin-top:22px}.pgal img{width:100%;border-radius:14px}
-.mv img{border-radius:20px;box-shadow:0 18px 44px rgba(42,3,20,.25);align-self:start}
 footer .fine{display:block;margin-top:16px;font-size:.88rem;opacity:.85}footer .fine p+p{margin-top:4px}
 .contact form+h2{margin-top:0}.contact p.lead{margin-bottom:6px;max-width:30em}
