@@ -79,8 +79,10 @@ footer .fine{display:block;margin-top:16px;font-size:.88rem;opacity:.85}footer .
 .menu span{position:absolute;left:10px;right:10px;height:3px;border-radius:2px;background:currentColor;transition:transform .2s,opacity .2s}
 .menu span:nth-child(1){top:15px}.menu span:nth-child(2){top:22px}.menu span:nth-child(3){top:29px}
 .open .menu span:nth-child(1){top:22px;transform:rotate(45deg)}.open .menu span:nth-child(2){opacity:0}.open .menu span:nth-child(3){top:22px;transform:rotate(-45deg)}
-.js nav{display:none;flex-direction:column;gap:0;width:100%;margin-top:6px;padding:8px;background:#3d0820;border:1px solid rgba(255,255,255,.2);border-radius:14px}
+.js nav{display:none;flex-direction:column;gap:0;width:100%;margin-top:8px;padding:8px 0;background:#fff;color:var(--ink);border-radius:14px;box-shadow:0 14px 34px rgba(42,3,20,.28)}
 .js .open nav{display:flex}
-.js nav a{padding:13px 14px;opacity:1}
+.js nav a{padding:14px 22px;opacity:1;font-size:1.05rem}
+.js nav a:hover,.js nav a[aria-current]{color:var(--mag);text-decoration:none}
+.js nav a[aria-current]{font-weight:700}
 html:not(.js) .hero{padding-top:200px}html:not(.js) .phero{padding-top:170px}
 }
