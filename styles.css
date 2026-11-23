@@ -51,7 +51,7 @@ section{padding:92px 0}
 footer{background:var(--wine);color:#fff;padding:34px 0;font-size:.95rem}
 footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 @media(max-width:860px){
-.hero{padding-top:150px}.hero .wrap,.about .wrap{grid-template-columns:1fr}
+.hero{padding-top:200px}nav{gap:10px 18px}.hero .wrap,.about .wrap{grid-template-columns:1fr}
 .cgrid{grid-template-columns:1fr;gap:36px}.contact dl{grid-template-columns:1fr;gap:2px 0}.contact dd{margin-bottom:14px}.row{grid-template-columns:1fr;gap:10px}section{padding:68px 0}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 
