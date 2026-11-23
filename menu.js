@@ -1,0 +1,10 @@
+(()=>{const b=document.querySelector('.bar'),n=b&&b.querySelector('nav');if(!n)return;
+n.id='nav';
+const t=document.createElement('button');t.type='button';t.className='menu';t.setAttribute('aria-label','Open menu');t.setAttribute('aria-controls','nav');t.setAttribute('aria-expanded','false');t.innerHTML='<span></span><span></span><span></span>';
+b.insertBefore(t,n);
+const set=o=>{b.classList.toggle('open',o);t.setAttribute('aria-expanded',String(o));t.setAttribute('aria-label',o?'Close menu':'Open menu')};
+t.addEventListener('click',()=>set(!b.classList.contains('open')));
+n.addEventListener('click',e=>{if(e.target.closest('a'))set(false)});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')set(false)});
+matchMedia('(min-width:861px)').addEventListener('change',e=>{if(e.matches)set(false)});
+})();
